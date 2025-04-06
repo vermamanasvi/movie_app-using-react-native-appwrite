@@ -48,3 +48,18 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+
+
+
+
+Steps:
+npx expo start for setting app on phone
+npm install nativewind tailwind react-native-reanimated react-native-safe-area context
+npx tailwind init
+update tailwind.config.js from nativewind/expo website, add babel.config.js, add global.css, add metro.config.js by "npx expo customize metro.config.js" -> copy paste
+add import './globals.css'; on layout.tsx
+make nativewind-env.d.ts on root dir -> /// <refernces types="nativewind/types" />
+
+npx expo start --clear           for reloading the app with staged changes
+
