@@ -63,3 +63,19 @@ make nativewind-env.d.ts on root dir -> /// <refernces types="nativewind/types" 
 
 npx expo start --clear           for reloading the app with staged changes
 
+
+
+
+Routing: 
+Create new tsx files for diff pages in app dir and type rnfes  
+Dynamic Routing: Create a seprate dir in apps dir and under that dir make files of diff ids like [id].tsx for each movies
+on [id].tsx import { useLocalSearchParams } from 'expo-router', const { id } = useLocalSearchParams();, export default Details; 
+
+when you declare a reusable component like TabIcon you must start its name with a capital letter, it must be :
+const TabIcon 
+and not:
+const tabIcon 
+or it won't work
+
+
+
